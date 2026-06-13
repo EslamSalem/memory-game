@@ -9,7 +9,7 @@ function App() {
   const [isOver, setIsOver] = useState(false);
 
   useEffect(() => {
-    fetch("https://pokeapi.co/api/v2/pokemon?limit=20")
+    fetch("/api/pokemon?limit=20")
       .then((response) => response.json())
       .then((data) => {
         const fetchPromises = data.results.map((item) => {
