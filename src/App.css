@@ -1,0 +1,65 @@
+body {
+  background-color: rgb(78, 68, 78);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: whitesmoke;
+  text-align: center;
+}
+
+#title {
+  font-size: 64px;
+}
+
+#description {
+  font-size: 24px;
+}
+
+#score-board {
+  background-color: rgb(147, 58, 230);
+  border: 1px solid whitesmoke;
+  border-left: none;
+  border-radius: 0 8px 8px 0;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  text-align: left;
+  padding: 0 20px;
+}
+
+#win-screen h1 {
+  font-weight: normal;
+  font-size: 2rem;
+  margin-top: 150px;
+}
+
+#cards-container {
+  display: grid;
+  grid-template-columns: repeat(5, 200px);
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn {
+  background-color: rgb(147, 58, 230);
+  padding: 4px 10px;
+  border: 1px solid whitesmoke;
+  border-radius: 6px;
+  font: inherit;
+  color: whitesmoke;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: rgb(154, 73, 230);
+}
+
+#play-again-btn {
+  font-size: 2rem;
+  padding: 10px 20px;
+}
+
+@media (max-width: 1100px) {
+  #cards-container {
+    grid-template-columns: repeat(auto-fit, 200px);
+  }
+}
